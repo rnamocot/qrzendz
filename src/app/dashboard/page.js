@@ -99,18 +99,16 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-yellow-50">
-      {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-40">
-        <div className="container mx-auto px-4 py-4">
+      {/* Spacer for fixed header */}
+      <div className="h-40"></div>
+      <div className="container mx-auto px-4 pb-8">
+        {/* Dashboard Header */}
+        <div className="mb-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <Link href="/" className="flex items-center gap-2">
-                <QrCode className="w-8 h-8 text-black" />
-                <span className="text-xl font-bold text-black">ZendzQR</span>
-              </Link>
-              <div className="hidden md:flex items-center gap-2 text-sm text-gray-500">
-                <span>/</span>
-                <span>Dashboard</span>
+              <div>
+                <h1 className="text-3xl font-bold text-black mb-2">Dashboard</h1>
+                <p className="text-gray-600">Manage your QR codes and track performance</p>
               </div>
             </div>
 
@@ -132,24 +130,10 @@ export default function Dashboard() {
                   {userType === 'pro' ? 'Unlimited' : `${qrCodesGenerated}/${getQRLimit()}`} QR codes
                 </span>
               </div>
-
-              {/* Logout Button */}
-              <button
-                onClick={() => {
-                  signOut()
-                  router.push('/')
-                }}
-                className="p-2 text-gray-600 hover:text-black hover:bg-gray-100 rounded-xl transition-colors"
-                title="Sign Out"
-              >
-                <LogOut className="w-5 h-5" />
-              </button>
             </div>
           </div>
         </div>
-      </header>
 
-      <div className="container mx-auto px-4 pt-32 pb-8">
         {/* Stats Section */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border border-gray-200">

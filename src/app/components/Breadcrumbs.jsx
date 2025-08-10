@@ -45,7 +45,7 @@ export default function Breadcrumbs() {
   })
   
   return (
-    <nav className="bg-white/80 backdrop-blur-sm border-b border-gray-200/60" aria-label="Breadcrumb">
+    <nav className="fixed top-20 left-0 right-0 z-40 bg-white/80 backdrop-blur-sm border-b border-gray-200/60" aria-label="Breadcrumb">
       <div className="container">
         <ol className="flex items-center space-x-2 py-3 text-sm">
           {breadcrumbs.map((crumb, index) => (

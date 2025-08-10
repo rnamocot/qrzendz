@@ -15,7 +15,9 @@ export const metadata = {
 
 export default function Terms() {
   return (
-    <section className="bg-white py-20 pt-32">
+    <section className="bg-white py-20">
+      {/* Spacer for fixed header */}
+      <div className="h-40"></div>
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold text-black mb-8">Terms of Service</h1>

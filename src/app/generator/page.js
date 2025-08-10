@@ -13,7 +13,9 @@ export const metadata = {
 
 export default function GeneratorPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-yellow-50 pt-32 pb-16">
+    <main className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-yellow-50 pb-16">
+      {/* Spacer for fixed header */}
+      <div className="h-40"></div>
       <div className="container">
         {/* Header Section */}
         <div className="text-center mb-16">

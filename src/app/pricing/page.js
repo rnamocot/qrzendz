@@ -51,7 +51,9 @@ export default function Pricing() {
   ]
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-yellow-50 py-32 pt-40">
+    <section className="min-h-screen bg-gradient-to-br from-white via-gray-50 to-yellow-50 py-32">
+      {/* Spacer for fixed header */}
+      <div className="h-40"></div>
       <div className="container">
         <div className="max-w-5xl mx-auto">
           {/* Header */}

@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-screen bg-gradient-to-br from-white via-gray-50 to-yellow-50 overflow-hidden flex items-center pt-20">
+      <section className="relative min-h-screen bg-gradient-to-br from-white via-gray-50 to-yellow-50 overflow-hidden flex items-center">
+        {/* Spacer for fixed header */}
+        <div className="absolute top-0 w-full h-40"></div>
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-64 h-64 border-2 border-black rounded-2xl rotate-12"></div>
