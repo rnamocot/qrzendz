@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Allow search engines to crawl all pages
+Allow: /about
+Allow: /generator
+Allow: /pricing
+Allow: /learning-center
+Allow: /support
+
+# Block crawling of API routes and auth pages for privacy
+Disallow: /api/
+Disallow: /auth/
+Disallow: /dashboard
+
+# Sitemap location
+Sitemap: https://zendzqr.com/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
